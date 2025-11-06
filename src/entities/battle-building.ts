@@ -1,3 +1,12 @@
-import { Building } from "./building"
+import { BattleBuildingData } from "../interfaces/battle-building"
+import { Building, BuildingOptions } from "./building"
 
-export class BattleBuilding extends Building {}
+type BattleBuildingOptions = BuildingOptions & {
+    data: BattleBuildingData
+}
+
+export class BattleBuilding extends Building {
+    constructor(options: BattleBuildingOptions) {
+        super(options)
+    }
+}

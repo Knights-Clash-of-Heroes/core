@@ -1,11 +1,11 @@
-export interface BuildingData {
+export interface BattleBuildingData {
     id: number
     nameKey: string
     descriptionKey: string
     attributes: {
-        damage?: number
+        damage: number
         health: number
-        initiative?: number
+        initiative: number
     }
     upgrades: {
         id: number
